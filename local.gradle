@@ -1,0 +1,3 @@
+ext {
+    JDK_FOURTEEN_PATH='/media/mohamed/jdk-14'
+}

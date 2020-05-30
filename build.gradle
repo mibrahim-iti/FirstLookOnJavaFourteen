@@ -1,0 +1,41 @@
+plugins {
+    id 'java'
+    id 'eclipse' // optional, for Eclipse project
+	id 'idea'	 // optional, for IntelliJ IDEA project
+    id 'org.javamodularity.moduleplugin' version '1.6.0'
+}
+
+apply from: 'local.gradle'
+
+sourceCompatibility = 1.14
+targetCompatibility = 1.14
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13'
+}
+
+test {
+    jvmArgs(['--enable-preview'])
+    //useJUnitPlatform()// Using this only with JUnit5, default platform is for JUnit4
+}
+
+tasks.withType(JavaCompile) {
+    options.compilerArgs.addAll('--enable-preview','-Xlint:preview')
+
+    if (targetCompatibility.toDouble() > JavaVersion.current().majorVersion.toDouble()) {
+        //throw new GradleException("The java version used ${JavaVersion.current()} is not the expected version ${project.targetCompatibility}.")
+        options.with {
+            fork = true
+            forkOptions.javaHome = file("$JDK_FOURTEEN_PATH")
+            //forkOptions.executable = "$JDK_FOURTEEN_PATH/bin/javac"
+        }
+    }
+}
+
+tasks.withType(Test) {
+    executable = "$JDK_FOURTEEN_PATH/bin/java"
+}
