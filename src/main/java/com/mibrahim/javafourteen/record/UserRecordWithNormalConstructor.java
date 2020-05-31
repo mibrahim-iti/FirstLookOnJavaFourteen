@@ -6,6 +6,8 @@ import java.time.Period;
 /**
  * This is a JDK-14 record type class with a normal constructors (so it overrites default constructor)
  * 
+ * You can read my LinkedIn article https://www.linkedin.com/pulse/quick-look-java-14-records-mohamed-ibrahim-ali/
+ * 
  * @author Mohamed-Ibrahim
  *
  */

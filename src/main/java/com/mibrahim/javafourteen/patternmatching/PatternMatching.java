@@ -5,6 +5,8 @@ package com.mibrahim.javafourteen.patternmatching;
  * 
  * Just showing a way of how to use patter matching in JDK-14
  * 
+ * You can read my LinkedIn article https://www.linkedin.com/pulse/quick-look-java-14-pattern-matching-mohamed-ibrahim-ali/
+ * 
  * @author Mohamed-Ibrahim
  *
  */

@@ -3,6 +3,8 @@ package com.mibrahim.javafourteen.record;
 /**
  * This is a normal Java class which uses only a final fields
  * 
+ * You can read my LinkedIn article https://www.linkedin.com/pulse/quick-look-java-14-records-mohamed-ibrahim-ali/
+ * 
  * @author Mohamed-Ibrahim
  *
  */

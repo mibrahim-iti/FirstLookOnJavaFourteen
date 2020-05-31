@@ -5,8 +5,9 @@ interface RecordInterface {
 }
 
 /**
- * 
  * Record type class implements interface
+ * 
+ * You can read my LinkedIn article https://www.linkedin.com/pulse/quick-look-java-14-records-mohamed-ibrahim-ali/
  * 
  * @author Mohamed-Ibrahim
  *

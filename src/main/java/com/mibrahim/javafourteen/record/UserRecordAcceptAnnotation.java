@@ -12,10 +12,11 @@ import com.mibrahim.javafourteen.record.Annotation.OnMethodAnnotation;
 import com.mibrahim.javafourteen.record.Annotation.RepeatableAnnotation;
 
 /**
- * 
  * Record class accepts annotations on fields and methods
  * 
  * BTW Java 14 intorduced new target element type @Target({ ElementType.RECORD_COMPONENT })
+ * 
+ * You can read my LinkedIn article https://www.linkedin.com/pulse/quick-look-java-14-records-mohamed-ibrahim-ali/
  * 
  * @author Mohamed-Ibrahim
  *
